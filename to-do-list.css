@@ -1,0 +1,93 @@
+*{
+	font-family:"Arial",sans-serif;
+
+}
+
+/* Arxaplan */
+
+body{background-color:#1D2228;}
+
+/* Ümumi <p> teqləri */
+
+p{
+	color:#0F2557;
+	margin-top:25px;
+	margin-left:20px;
+}
+
+/* Ümumi konteyner */
+
+.to-do-container{
+	position:absolute;
+	top:60%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	background:#e1e2e2;
+	height:30rem;
+	width:35rem;
+}
+
+/* Başlıq */
+
+#header {
+	text-align:center;
+}
+
+/* 'Input və əlavə et butonu' konteyneri */
+
+.input-container{
+	display:inline-flex;
+	margin-top:50px;
+}
+
+/* Name inputu */
+
+.name-input{
+	margin-left:10px;
+	width:410px;
+	outline:none;
+	height:5px;
+	padding:15px;
+	border:1px ridge #fb8122;
+}
+
+/* Əlavə et butonu */
+
+.add-item{
+	color:#fb8122;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius:5px;
+	border:1px ridge #fb8122;
+	background:transparent;
+	font-family:"Century Gothic";
+	font-weight:550;
+	transition:0.3s;
+
+}
+
+.add-item:hover{
+	background-color: #fb8122;
+	color:#fff;
+}
+
+/* Sil butonu */
+
+.clear-item{
+	position:absolute;
+	top:90%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	width:90px;
+	height:45px;
+	color:#fb8122;
+	background:transparent;
+	border:1px ridge #fb8122;
+	transition:0.3s;
+	font-family:"Century Gothic";
+	font-weight:550;
+}
+
+.clear-item:hover{
+	background-color: #fb8122;
+	color:#fff;
+}

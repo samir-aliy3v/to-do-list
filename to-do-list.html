@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="to-do-list.css">
+	<title>To Do List App</title>
+</head>
+
+<body>
+	<div class="to-do-container">
+
+		<h2 id="header">To Do List</h2>
+
+		<div class="input-container">
+			<input type="text" class="name-input" placeholder="Name...">
+			<button type="submit" class="add-item">Add item</button>
+		</div>
+
+		<button class="clear-item">Clear Item</button>
+		
+	</div>
+
+<script>
+
+	/* HTML DOM ilə elementlərin seçilməsi */
+
+	var addBtn = document.querySelector(".add-item");
+	var nameInput = document.querySelector(".name-input");
+	var clearBtn = document.querySelector(".clear-item");
+
+	/* Əlavə et butonu */
+
+	addBtn.addEventListener("click",function()
+	{	
+		var p = document.createElement("P");
+		p.appendChild(document.createTextNode(nameInput.value));
+		var opwi = document.querySelector(".to-do-container");
+		opwi.appendChild(p);
+		nameInput.value="";
+
+	});
+
+	/* Sil butonu */
+
+	clearBtn.addEventListener("click",function()
+	{
+	
+		var p2 = document.querySelector("P");
+		p2.parentNode.removeChild(p2);
+
+	});
+
+</script>
+</body>
+</html>
